@@ -7,9 +7,9 @@
     <ion-label>Email</ion-label>
     <ion-input class="input" type="text"></ion-input>
     <ion-label>Senha</ion-label>
-    <ion-input class="input" type="password"></ion-input>
+    <ion-input class="input" type="{{showPass ? 'text' : 'password'}}"></ion-input>
     <h6 (click)="changeVisibilityPass()">{{showPass ? 'Esconder senha' : 'Mostrar  senha'}}</h6>
-    <ion-button expand="block">
+    <ion-button expand="block" (click)="login()">
       Logar
     </ion-button>
   </div>

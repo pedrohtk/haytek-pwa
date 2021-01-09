@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  showPass = false as boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeVisibilityPass(){
+    this.showPass = !this.showPass;
   }
 
 }
